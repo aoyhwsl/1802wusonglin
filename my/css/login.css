@@ -1,0 +1,744 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 12px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+input {
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  border: 1px solid #dcdcdc;
+  font-size: 16px; }
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0; }
+
+.clearfix:before {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0; }
+
+.clearfix {
+  zoom: 1; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.wrap {
+  width: 1000px;
+  height: 88px;
+  margin: 0 auto; }
+
+.head-logo {
+  height: 63px;
+  margin-top: 15px;
+  width: 257px; }
+
+.head-list-ul {
+  width: 77px;
+  height: 14px;
+  line-height: 14px;
+  float: right;
+  display: inline;
+  margin: 48px 0 0 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 10; }
+  .head-list-ul ul {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    top: -6px;
+    left: -10px;
+    width: 85px;
+    z-index: 1;
+    padding-top: 26px; }
+    .head-list-ul ul li {
+      border-top: 1px dotted #ccc;
+      padding-left: 10px;
+      height: 24px;
+      line-height: 24px;
+      background: #fff; }
+  .head-list-ul p {
+    height: 14px;
+    position: relative;
+    z-index: 2; }
+    .head-list-ul p span {
+      float: left;
+      display: inline-block;
+      color: #666;
+      margin-right: 6px; }
+    .head-list-ul p i {
+      float: left;
+      display: inline-block;
+      width: 15px;
+      height: 14px;
+      background: url(../img/regLogin-8.png) no-repeat -23px 0; }
+
+.head-list-p {
+  float: right;
+  color: #999;
+  margin-top: 48px;
+  height: 14px;
+  line-height: 14px; }
+  .head-list-p a {
+    color: #0066cc;
+    margin-left: 20px; }
+
+.main-bg {
+  width: 100%;
+  padding: 0 0 50px;
+  height: 600px;
+  background: url("../img/ffbe1cfff41e4804be5b5c83b2fb840b.jpg") no-repeat center top; }
+
+.main {
+  width: 1000px;
+  margin: 0 auto; }
+
+.content {
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 405px;
+  top: 100px;
+  left: 650px; }
+
+.code {
+  display: block;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  cursor: pointer; }
+  .code i {
+    width: 65px;
+    height: 65px;
+    display: block;
+    background: url(../img/regLogin-8.png) no-repeat 0 -230px; }
+
+.login-img {
+  display: none;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  cursor: pointer; }
+  .login-img i {
+    width: 65px;
+    height: 65px;
+    display: block;
+    background: url(../img/regLogin-8.png) no-repeat -80px -230px; }
+
+.logincon {
+  width: 270px;
+  margin-left: 40px; }
+  .logincon .logincon-title {
+    margin: 14px 0 19px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    border-bottom: 1px solid #e9e9e9; }
+    .logincon .logincon-title a {
+      float: left;
+      display: inline-block;
+      color: #999;
+      font-size: 16px; }
+    .logincon .logincon-title .aon {
+      color: #e4393c;
+      font-weight: bold; }
+    .logincon .logincon-title span {
+      float: left;
+      display: inline-block;
+      font-size: 12px;
+      color: #999;
+      padding: 0 18px; }
+
+.footer {
+  width: 100%;
+  padding: 10px 0 0;
+  height: 90px; }
+  .footer .footer-warp {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center; }
+    .footer .footer-warp p {
+      line-height: 30px;
+      color: #333; }
+    .footer .footer-warp p:last-of-type {
+      color: red; }
+
+.display-block {
+  display: block !important; }
+
+.display-none {
+  display: none !important; }
+
+.logincon-mobile {
+  display: none;
+  height: 267px;
+  border-bottom: 1px dotted #ccc;
+  overflow: hidden; }
+  .logincon-mobile .user {
+    width: 270px;
+    height: 42px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px; }
+    .logincon-mobile .user em {
+      display: inline-block;
+      width: 43px;
+      height: 40px;
+      background: #f3f3f3;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      z-index: 3;
+      border-right: 1px solid #dcdcdc; }
+      .logincon-mobile .user em i {
+        background: url(../img/regLogin-8.png) no-repeat -51px 0;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin: 10px 10px 0 11px; }
+    .logincon-mobile .user span {
+      display: none;
+      position: absolute;
+      left: 246px;
+      top: 15px;
+      width: 15px;
+      height: 15px;
+      background-position: -162px 0;
+      background: url(../img/regLogin-8.png) no-repeat -162px 0; }
+    .logincon-mobile .user div {
+      display: none;
+      padding: 0 10px;
+      height: 20px;
+      color: #fff;
+      line-height: 20px;
+      position: absolute;
+      bottom: -15px;
+      right: 0;
+      z-index: 5;
+      background: #ed787f; }
+
+.logincon-login {
+  height: 267px;
+  border-bottom: 1px dotted #ccc;
+  overflow: hidden; }
+  .logincon-login .user {
+    width: 270px;
+    height: 42px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px; }
+    .logincon-login .user em {
+      display: inline-block;
+      width: 43px;
+      height: 40px;
+      background: #f3f3f3;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      z-index: 3;
+      border-right: 1px solid #dcdcdc; }
+      .logincon-login .user em i {
+        background: url(../img/regLogin-8.png) no-repeat -51px 0;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin: 10px 10px 0 11px; }
+    .logincon-login .user span {
+      display: none;
+      position: absolute;
+      left: 246px;
+      top: 15px;
+      width: 15px;
+      height: 15px;
+      background-position: -162px 0;
+      background: url(../img/regLogin-8.png) no-repeat -162px 0; }
+    .logincon-login .user div {
+      display: none;
+      padding: 0 10px;
+      height: 20px;
+      color: #fff;
+      line-height: 20px;
+      position: absolute;
+      bottom: -15px;
+      right: 0;
+      z-index: 5;
+      background: #ed787f; }
+
+.on {
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  border: 1px solid #ff6666;
+  font-size: 16px; }
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: none;
+  font-weight: 700;
+  width: 173px;
+  padding: 0 45px 0 50px; }
+
+.pass {
+  width: 270px;
+  height: 42px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 20px; }
+  .pass em {
+    display: inline-block;
+    width: 43px;
+    height: 40px;
+    background: #f3f3f3;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 3;
+    border-right: 1px solid #dcdcdc; }
+    .pass em i {
+      background: url(../img/regLogin-8.png) no-repeat -83px 0;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin: 10px 10px 0 11px; }
+  .pass span {
+    display: none;
+    position: absolute;
+    left: 246px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background-position: -162px 0;
+    background: url(../img/regLogin-8.png) no-repeat -162px 0; }
+  .pass div {
+    display: none;
+    padding: 0 10px;
+    height: 20px;
+    color: #fff;
+    line-height: 20px;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    z-index: 5;
+    background: #ed787f; }
+
+.ucode {
+  width: 270px;
+  height: 42px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 20px; }
+  .ucode em {
+    display: inline-block;
+    width: 43px;
+    height: 40px;
+    background: #f3f3f3;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 3;
+    border-right: 1px solid #dcdcdc; }
+    .ucode em i {
+      background: url(../img/regLogin-8.png) no-repeat -426px 0;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin: 10px 10px 0 11px; }
+  .ucode span {
+    display: none;
+    position: absolute;
+    left: 189px;
+    top: 1px;
+    width: 80px;
+    height: 40px; }
+  .ucode div {
+    display: none;
+    padding: 0 10px;
+    height: 20px;
+    color: #fff;
+    line-height: 20px;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    z-index: 5;
+    background: #ed787f; }
+
+.sublogin input {
+  width: 270px;
+  background-color: #e10303;
+  color: #fff;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer; }
+
+.morechoice {
+  margin-top: 16px; }
+  .morechoice .auto {
+    color: #999;
+    display: inline-block; }
+    .morechoice .auto input {
+      height: 13px; }
+  .morechoice a {
+    color: #0066cc;
+    display: inline-block;
+    float: right;
+    padding-left: 13px; }
+
+.logincon-footer {
+  width: 320px; }
+  .logincon-footer p {
+    margin: 22px 15px 0 0;
+    float: left;
+    color: #999; }
+  .logincon-footer div {
+    width: 243px;
+    height: 42px;
+    margin: 0 auto; }
+    .logincon-footer div .qq i {
+      background-position: 0 -35px;
+      margin-left: 0; }
+    .logincon-footer div .sina i {
+      background-position: -51px -35px; }
+    .logincon-footer div .alipay i {
+      background-position: -102px -35px; }
+    .logincon-footer div .baidu i {
+      background-position: -153px -35px; }
+    .logincon-footer div .qq:hover i {
+      background-position: 0 -86 px;
+      margin-left: 0; }
+    .logincon-footer div .sina:hover i {
+      background-position: -51px -86px; }
+    .logincon-footer div .alipay:hover i {
+      background-position: -102px -86px; }
+    .logincon-footer div .baidu:hover i {
+      background-position: -153px -86px; }
+    .logincon-footer div i {
+      float: left;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-left: 12px;
+      margin-top: 16px; }
+
+i {
+  background: url(../img/regLogin-8.png) no-repeat 0 0; }
+
+.message {
+  margin-bottom: 20px;
+  width: 270px;
+  height: 42px;
+  float: left;
+  position: relative; }
+  .message p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 114px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    cursor: pointer;
+    border-radius: 3px; }
+  .message input {
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+    width: 95px;
+    padding-left: 54px; }
+  .message em {
+    display: inline-block;
+    width: 43px;
+    height: 40px;
+    background: #f3f3f3;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 3;
+    border-right: 1px solid #dcdcdc; }
+    .message em i {
+      background: url(../img/regLogin-8.png) no-repeat -259px 0px;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin: 10px 10px 0 11px; }
+
+.ewcon {
+  width: 270px;
+  margin-left: 40px; }
+  .ewcon h2 {
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    color: #666; }
+
+.csan {
+  text-align: center;
+  position: relative; }
+  .csan .csan-head {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 40px;
+    position: relative;
+    overflow: hidden;
+    left: 0; }
+    .csan .csan-head img {
+      width: 100%;
+      height: 100%; }
+
+.csan-img {
+  width: 167px;
+  height: 200px;
+  position: absolute;
+  top: -25px;
+  right: -30px;
+  display: none; }
+
+.csan-title i {
+  display: block;
+  float: left;
+  width: 33px;
+  height: 33px;
+  margin: 1px 10px 0 65px;
+  background: url(../img/regLogin-8.png)-270px -150px no-repeat; }
+.csan-title p {
+  float: left;
+  color: #999;
+  line-height: 16px;
+  text-align: left; }
+  .csan-title p em {
+    color: #e4393c;
+    font-style: normal; }
+
+.csan-footer {
+  padding-top: 50px;
+  text-align: right; }
+  .csan-footer span {
+    text-align: right; }
+    .csan-footer span a {
+      padding-left: 10px;
+      color: #333; }
+
+.regmain-bg {
+  background: url(../img/bg.jpg) repeat-x scroll left top;
+  padding-top: 70px; }
+  .regmain-bg .register-box {
+    width: 1000px;
+    margin: 0 auto; }
+    .regmain-bg .register-box .register-box-main {
+      background: #fff;
+      border: 3px solid #eaeaea;
+      border-radius: 5px;
+      box-shadow: 1px 6px 11px #e4e4e4;
+      height: 500px;
+      position: relative; }
+      .regmain-bg .register-box .register-box-main .register-h-m-con {
+        height: 450px;
+        width: 994px;
+        position: relative; }
+        .regmain-bg .register-box .register-box-main .register-h-m-con .register-h-m-c-regbox {
+          width: 280px;
+          height: 34px;
+          position: absolute;
+          right: 15px;
+          top: -37px; }
+          .regmain-bg .register-box .register-box-main .register-h-m-con .register-h-m-c-regbox .onreg {
+            height: 35px;
+            border: 2px solid #eaeaea;
+            background: #fff;
+            color: #ff9900;
+            margin-bottom: -3px;
+            position: relative;
+            border-bottom: none; }
+          .regmain-bg .register-box .register-box-main .register-h-m-con .register-h-m-c-regbox a {
+            float: right;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 15px;
+            height: 34px;
+            line-height: 34px;
+            color: #fff;
+            font-size: 14px;
+            border-bottom: 0px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background: #ff9900;
+            margin-left: 6px;
+            vertical-align: top;
+            border-bottom: none; }
+  .regmain-bg .text {
+    padding: 0; }
+  .regmain-bg .regconwarp {
+    height: 500px;
+    width: 994px;
+    overflow: hidden;
+    position: relative; }
+    .regmain-bg .regconwarp .regcon {
+      width: 784px;
+      padding: 55px 0 0 125px;
+      float: left; }
+  .regmain-bg .pub {
+    width: 230px;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 30px;
+    float: left; }
+  .regmain-bg .pubbox {
+    margin-top: 10px;
+    height: 42px;
+    width: 302px;
+    float: left;
+    position: relative; }
+    .regmain-bg .pubbox input {
+      width: 255px;
+      padding-left: 45px;
+      background: none;
+      position: relative;
+      z-index: 3;
+      font-weight: 700; }
+    .regmain-bg .pubbox i {
+      background: url(../img/regLogin-8.png) no-repeat 0 0;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 14px;
+      z-index: 4; }
+    .regmain-bg .pubbox .pubbox-errori {
+      right: 10px;
+      display: none; }
+    .regmain-bg .pubbox .pubbox-useri {
+      display: inline-block;
+      height: 26px;
+      width: 26px;
+      position: absolute;
+      left: 12px;
+      top: 9px; }
+    .regmain-bg .pubbox span {
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      color: #fff;
+      padding: 0 8px;
+      position: absolute;
+      top: 37px;
+      right: 0px;
+      z-index: 5;
+      display: none; }
+      .regmain-bg .pubbox span:first-of-type {
+        background: #ccc; }
+      .regmain-bg .pubbox span:last-of-type {
+        background: #ed787f; }
+    .regmain-bg .pubbox .false {
+      background: #ed787f; }
+    .regmain-bg .pubbox .error {
+      background: #ccc; }
+  .regmain-bg .pubbox-errori {
+    background-position: -162px 0; }
+  .regmain-bg .user .pubbox-useri {
+    background-position: -48px 2px; }
+  .regmain-bg .yzmbox em {
+    font-style: normal;
+    display: block;
+    width: 80px;
+    height: 40px;
+    background-position: 188px 100px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 3; }
+  .regmain-bg .yzmbox .pubbox-useri {
+    background-position: -422px 2px; }
+  .regmain-bg .xymbox .pubbox-useri {
+    background-position: -259px 1px; }
+  .regmain-bg .passbox .pass span:first-of-type {
+    width: 70px;
+    right: 50px; }
+  .regmain-bg .passbox .pass span:last-of-type {
+    width: 243px;
+    left: 50px; }
+  .regmain-bg .passbox .pubbox-useri {
+    background-position: -77px 2px; }
+  .regmain-bg .surebox .pubbox-useri {
+    background-position: -77px 2px; }
+  .regmain-bg .xym input {
+    width: 101px;
+    padding-left: 45px;
+    background: none;
+    position: relative;
+    z-index: 3;
+    font-weight: 700; }
+  .regmain-bg .xymmessage {
+    display: inline-block;
+    width: 146px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    cursor: pointer;
+    border-radius: 3px; }
+  .regmain-bg .checkbox,
+  .regmain-bg .footreg {
+    margin: 8px 0 0 260px; }
+    .regmain-bg .checkbox div,
+    .regmain-bg .footreg div {
+      height: 42px;
+      width: 302px;
+      float: left;
+      position: relative; }
+      .regmain-bg .checkbox div span,
+      .regmain-bg .footreg div span {
+        display: inline-block;
+        color: #999;
+        margin-left: 10px;
+        line-height: 22px; }
+
+input {
+  vertical-align: middle; }
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<style type="text/css">
+			{}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="wrap">
+				<div class="left head-logo">
+					<a href="#"><img src="img/logo.png"></a>
+					<span><img src="img/slogan.jpg"></span>
+				</div>
+				<div class="right head-list clearfix">
+					<div class="head-list-ul right">
+						<p class="clearfix"><span>帮助中心</span><i></i></p>
+						<ul class="clearfix">
+							<li>
+								<a href="#">配送说明</a>
+							</li>
+							<li>
+								<a href="#">支付方式</a>
+							</li>
+							<li>
+								<a href="#">售后服务</a>
+							</li>
+							<li>
+								<a href="#">企业客户</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix head-list-p right">
+						欢迎来到酒仙网！
+						<a href="#">免费注册</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="regmain-bg">
+			<div class="register-box clearfix">
+				<div class="register-box-main">
+					<div class="register-h-m-con">
+						<div class="register-h-m-c-regbox">
+							<a href="register.html" class="onreg">个人用户注册</a>
+						</div>
+						<div class="regconwarp">
+							<form method="post" action="php/reg.php">
+								<li class="regcon">
+									<div class="userbox clearfix">
+										<div class="pub">手机号</div>
+										<div class="user pubbox">
+											<i class="pubbox-useri"></i>
+											<i class="pubbox-errori"></i>
+											<input class="text" type="text" name="username" autocomplete="off">
+											<span class="pubbox-phone">请输入手机号</span>
+											<span class="pubbox-errorphone">请输入有效的手机号</span>
+										</div>
+									</div>
+									<div class="yzmbox clearfix">
+										<div class="pub">验证码</div>
+										<div class="yzm pubbox">
+											<i class="pubbox-useri"></i>
+											<input class="text" type="text" name="yzn">
+											<em></em>
+											<span class="pubbox-phone">请输入验证码</span>
+											<span class="pubbox-errorphone">请输入有效的验证码</span>
+										</div>
+									</div>
+									<div class="xymbox clearfix">
+										<div class="pub">效验码</div>
+										<div class="xym pubbox">
+											<i class="pubbox-useri"></i>
+											<i class="pubbox-errori"></i>
+											<input class="text" type="text" name="xym">
+											<div class="xymmessage right">请输入验证码</div>
+											<span class="pubbox-phone">请输入效验码</span>
+											<span class="pubbox-errorphone">请输入有效的效验码</span>
+										</div>
+									</div>
+									<div class="passbox clearfix">
+										<div class="pub">设置密码</div>
+										<div class="pass pubbox">
+											<i class="pubbox-useri"></i>
+											<i class="pubbox-errori"></i>
+											<input class="text" type="password" name="password">
+											<span class="pubbox-phone">请输入密码</span>
+											<span class="pubbox-errorphone">8-20位字符，数字、字母、符号至少包含两种</span>
+										</div>
+									</div>
+									<div class="surebox clearfix">
+										<div class="pub">确认密码</div>
+										<div class="sure pubbox">
+											<i class="pubbox-useri"></i>
+											<i class="pubbox-errori"></i>
+											<input class="text" type="password" name="sureword">
+											<span class="pubbox-phone">请再次输入密码</span>
+										</div>
+									</div>
+									<div class="checkbox">
+										<div>
+											<input type="checkbox" name="">
+											<span>
+												我已阅读并同意<a href="$">《酒仙网用户注册协议》</a>
+											</span>
+										</div>
+									</div>
+									<div class="footreg">
+										<div class="sublogin">
+											<input type="button" name="" value="立&nbsp;即&nbsp;注&nbsp;册">
+										</div>
+									</div>
+								</li>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-warp">
+				<p>©&nbsp;酒仙网&nbsp;2011 jiuxian.com All&nbsp;Rights Reserved&nbsp;&nbsp;京ICP证110141号&nbsp;&nbsp;京公网安备1101050188221</p>
+				<p>购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/reg.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	</body>
+
+</html>

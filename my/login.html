@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="wrap">
+				<div class="left head-logo">
+					<a href="index.html"><img src="img/logo.png"></a>
+					<span><img src="img/slogan.jpg"></span>
+				</div>
+				<div class="right head-list clearfix">
+					<div class="head-list-ul right">
+						<p class="clearfix"><span>帮助中心</span><i></i></p>
+						<ul class="clearfix">
+							<li>
+								<a href="#">配送说明</a>
+							</li>
+							<li>
+								<a href="#">支付方式</a>
+							</li>
+							<li>
+								<a href="#">售后服务</a>
+							</li>
+							<li>
+								<a href="#">企业客户</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix head-list-p right">
+						欢迎来到酒仙网！<a href="register.html">免费注册</a>
+					</div>
+				</div>		
+			</div>
+		</header>
+			<form method="post" action="../my/php/login.php">
+				<div class="main-bg">
+					<div class="main">
+						<div class="content">
+							<a href="javascript:;" class="code">
+								<i></i>
+							</a>
+							<a href="javascript:;" class="login-img">
+								<i></i>
+							</a>
+							<div class="logincon">
+								<div class="logincon-title">
+									<a href="javascript:;" class="logincon-title-login aon">账号登录</a><span>|</span>
+							        <a href="javascript:;" class="logincon-title-mobile">
+								手机动态密码登录
+							        </a>
+								</div>
+								<div class="logincon-login">
+									<div class="user">
+										<em>
+											<i></i>
+										</em>
+										<input class="text" type="text" name="username" placeholder="用户名/邮箱/手机号" autocomplete="off">
+										<span></span>
+										<div class="">请输入用户名/邮箱/手机号</div>
+									</div>
+									<div class="pass">
+										<em>
+											<i></i>
+										</em>
+										<input class="text" type="password" name="password" placeholder="密码" autocomplete="off">
+										<span></span>
+										<div class="">请输入密码</div>
+									</div>
+									<div class="ucode">
+										<em>
+											<i></i>
+										</em>
+										<input class="text" type="text" name="ucode" placeholder="验证码" autocomplete="off">
+										<span></span>
+										<div class="">请输入验证码</div>
+									</div>
+									<div class="sublogin">
+										<input type="button" name="submit" value="登&nbsp;&nbsp;录">
+									</div>
+									<div class="morechoice clearfix">
+										<div class="auto left">
+											<input type="checkbox" name="remeber" class="check" id="auto">
+											<label for="auto">自动登录</label>
+										</div>
+										<a href="register.html">免费注册</a><a href="#">忘记密码</a>
+									</div>
+								</div>
+								<div class="logincon-mobile ">
+									<div class="user">
+										<em>
+											<i></i>
+										</em>
+										<input class="text" type="text" name="username" placeholder="手机号" autocomplete="off">
+										<span></span>
+										<div class="">请输入手机号</div>
+									</div>
+									<div class="ucode">
+										<em>
+											<i></i>
+										</em>
+										<input class="text" type="text" name="ucode" placeholder="验证码" autocomplete="off">
+										<span></span>
+										<div class="">请输入验证码</div>
+									</div>
+									<div class="message clearfix">
+										<em>
+											<i></i>
+										</em>
+										<input type="text" name="message" autocomplete="off" >
+										<p>获取验证码短信</p>
+									</div>
+									<div class="sublogin">
+										<input type=button" name="submit" value="登&nbsp;&nbsp;录">
+									</div>
+								</div>
+								<div class="logincon-footer">
+									<p>使用合作账号登录</p>
+									<div>
+										<a href="#" class="qq"><i></i></a>
+										<a href="#" class="sina"><i></i></a>
+										<a href="#" class="alipay"><i></i></a>
+										<a href="#" class="baidu"><i></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="ewcon display-none">
+								<h2>扫码登录</h2>
+								<div class="csan">
+									<div class="csan-head">
+										<img src="img/scancode.jpg">
+									</div>
+									<div class="csan-img">
+										<img src="img/tip1.png">
+									</div>
+									<div class="clearfix csan-title">
+										<i></i>
+										<p>
+											打开<em>手机酒仙APP</em><br>扫描二维码
+										</p>
+									</div>
+									<div class="csan-footer">
+										<span>
+												<a href="login.html">账号密码登录 </a>
+												<a href="register.html">免费注册</a>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		<div class="footer">
+			<div class="footer-warp">
+				<p>©&nbsp;酒仙网&nbsp;2011 jiuxian.com All&nbsp;Rights Reserved&nbsp;&nbsp;京ICP证110141号&nbsp;&nbsp;京公网安备1101050188221</p>
+				<p>购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	</body>
+
+</html>
+
+				
